@@ -19,4 +19,9 @@ class MainController extends CoreController
     {
         $this->show('main/cv');
     }
+
+    public function game()
+    {
+        $this->show('main/game');
+    }
 }

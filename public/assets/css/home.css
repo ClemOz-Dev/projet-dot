@@ -79,5 +79,15 @@
     background-image: url("../images/videogame.jpeg");
 }
 
+/* Medium and large */
+@media screen and (min-width: 20em) and (max-width: 74.9375em) 
+{
+    .dot {
+        width: 210px;
+        height: 210px;
+    }
+    .dot--back {
+        font-size: 2.0rem;
+    }
 
-/* --------- BACK FACE -------- */
+}

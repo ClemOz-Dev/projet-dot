@@ -2,8 +2,8 @@ console.log('Fichier App Chargé');
 const app = {
 
     init: function () {
-        home.init();
-        // cv.cvDisplay();
+       
+        cv.init();
     },
 
 }

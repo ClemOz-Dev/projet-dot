@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/cv.css">
+    <link rel="stylesheet" href="assets/css/game.css">
     <title>Dot Project</title>
 </head>
 

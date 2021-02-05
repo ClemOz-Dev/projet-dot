@@ -38,6 +38,17 @@ $router->map(
     'main-cv'
 );
 
+//? ---------- ROUTE PAGE DU JEU ----------- ?\\
+
+$router->map(
+    'GET',
+    '/game',
+    [
+        'method' => 'game',
+        'controller' => '\App\Controllers\MainController'
+    ],
+    'main-game'
+);
 
 
 
