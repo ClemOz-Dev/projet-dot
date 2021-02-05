@@ -1,0 +1,83 @@
+/** ========================= Home features ======================= **/
+
+.dot {
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+@media screen and (min-width: 640px) {
+    .dot {
+        width: 360px;
+        height: 360px;
+    }
+}
+
+.dot:hover {
+    transform: rotateY(180deg);
+}
+
+.dot--back,
+.dot--front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.dot--back {
+    background-color: black;
+    border: #fff solid 1px;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 640px) {
+    .dot--back {
+        font-size: 4rem;
+    }
+}
+
+.dot--front {
+    background-color: white;
+}
+
+
+/* --------- FRONT FACE -------- */
+
+#front1,
+#front2,
+#front3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#front1 {
+    background-image: url("../images/desk-pen.jpg");
+
+}
+
+#front2 {
+    background-image: url("../images/code.jpeg");
+
+}
+
+#front3 {
+    background-image: url("../images/videogame.jpeg");
+}
+
+
+/* --------- BACK FACE -------- */

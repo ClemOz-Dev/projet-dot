@@ -1,0 +1,30 @@
+/** ========================= General features ======================= **/
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        flex-direction: row;
+    }
+}
