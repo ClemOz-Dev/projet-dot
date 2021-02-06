@@ -51,6 +51,19 @@ $router->map(
 );
 
 
+//? ---------- ROUTE LISTE FEATURES ----------- ?\\
+
+$router->map(
+    'GET',
+    '/features',
+    [
+        'method' => 'list',
+        'controller' => '\App\Controllers\FeaturesController'
+    ],
+    'features-list'
+);
+
+
 
 
 

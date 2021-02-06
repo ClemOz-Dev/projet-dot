@@ -1,13 +1,31 @@
-console.log("App chargé");
+console.log("Game chargé");
 const game = {
     countTour: 0,
     firstTourCard: "",
 
     init: function () {
-        //console.log('method init ok');
-
-        grid.distribute();
+        console.log('method game.init ok')
+        game.distribute();
         game.cardFlip();
+    },
+
+    /**
+     * Randomly distribute cards backs
+     */
+    distribute: function () {
+
+        let number = 0;
+        for (let i = 0; i < 12; i++) {
+            if (number == 6) {
+                number = 0;
+            }
+            let allCardBacks = document.querySelectorAll("[data-status='0']");
+            let randomNumber = allCardBacks[Math.floor(Math.random() * allCardBacks.length)];
+            randomNumber.dataset.status = "1";
+            number = parseInt(number) + 1;
+            randomNumber.classList.add('back' + number);
+        }
+
     },
 
     /**
@@ -66,15 +84,15 @@ const game = {
         let notYet = 0;
         let allCards = document.querySelectorAll('.card');
         for (let card of allCards) {
-            console.log(card.dataset.win);
+            //console.log(card.dataset.win);
             if (card.dataset.win == 1) {
                 notYet++;
             }
         }
-        console.log(notYet);
+        //console.log(notYet);
         if (notYet === 0) {
             console.log('it\'s over !!!');
-            document.querySelector('.win').style.display = "block";
+            document.querySelector('.win').style.display = "flex";
         }
 
     }
@@ -83,4 +101,3 @@ const game = {
 
 }
 
-document.addEventListener('DOMContentLoaded', game.init);

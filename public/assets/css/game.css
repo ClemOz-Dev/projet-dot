@@ -2,20 +2,71 @@
     width: 90%;
     height: 90%;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 4rem;   
 }
 
 .row {
     width: 100%;
-    height: 30%;
+    height: 25%;
     display: flex;
     justify-content: space-around;
     margin: auto;
+    text-align: center;
+}
+/** ======================  TITLE  ================================= **/
+.title {
+    width: 100%;
+    height: 20%;
+    color: #fff;
+    font-weight: 900;
+    font-size: 12vw;
+    text-align: center;
+    font-family: 'Wallpoet', cursive;
+}
+/** ======================  YOU WON  =============================== **/
+.win {
+    width: 80%;
+    height: 80%;
+    margin:auto;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    background-color: rgb(236, 5, 4); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
 }
 
-/** ======================  TITLE  ================================= **/
+span{
+	margin: 15px 15px;
+	line-height: .7;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+	animation: span 3s ease-in infinite alternate;
+}
+.letter{    
+	display: inline-flex;
+	height: 30px;
+	width: 27px;
+	/* border: 2.5px solid #FF1EAD; */
+	border: 3.35px solid white;
+	border-radius: 14px;
+	box-shadow:
+		0 0 2px rgba(0, 0, 0, .75),
+		inset 0 0 2px rgba(0, 0, 0, .45);
 
-
+	animation: letter 3s ease-in-out infinite alternate;
+}
+@keyframes span {
+	0%,30%{ margin: 10px 15px; }
+	70%,100%{ margin: 5px 5px; }
+}
+@keyframes letter {
+	0%,30%{ height: 27px; }
+	70%,100%{ height: 30vw; }
+}
 
 /** ======================  CARDS  ================================= **/
 
@@ -94,14 +145,3 @@
     background-image: url("../images/trump.jpg");
 }
 
-/* ============ VICTORY VIDEO ============== */
-
-.win {
-    width: 80%;
-    height: 80%;
-    margin:auto;
-    position: fixed;
-    display: none;
-    background-color: rgb(236, 5, 5); /* Fallback color */
-    background-color: rgba(255, 0, 0, 0.4); /* Black w/opacity/see-through */
-}

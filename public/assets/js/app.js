@@ -3,7 +3,10 @@ const app = {
 
     init: function () {
        
-        cv.init();
+        if (document.getElementById('game-container')){
+           game.init();
+        } 
+
     },
 
 }

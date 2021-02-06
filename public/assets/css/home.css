@@ -11,13 +11,6 @@
     transform-style: preserve-3d;
 }
 
-@media screen and (min-width: 640px) {
-    .dot {
-        width: 360px;
-        height: 360px;
-    }
-}
-
 .dot:hover {
     transform: rotateY(180deg);
 }
@@ -46,14 +39,13 @@
 
 @media screen and (min-width: 640px) {
     .dot--back {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 
 .dot--front {
     background-color: white;
 }
-
 
 /* --------- FRONT FACE -------- */
 
@@ -87,7 +79,14 @@
         height: 210px;
     }
     .dot--back {
-        font-size: 2.0rem;
+        font-size: 2rem;
     }
 
+}
+
+@media screen and (min-width: 640px) {
+    .dot {
+        width: 360px;
+        height: 360px;
+    }
 }

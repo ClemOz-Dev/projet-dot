@@ -1,1 +1,1 @@
-<button class ="back">BACK</button>
+<a href="<?= $router->generate('main-home');?>" id ="back-button">BACK</a>
