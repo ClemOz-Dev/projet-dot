@@ -1,1 +1,9 @@
-HELLO WORLD
+<div class ="feature-item"></div>
+<div class ="feature-item"></div>
+<div class ="feature-item"></div>
+<div class ="feature-item"></div>
+<div class ="feature-item"></div>
+<div class ="feature-item"></div>
+<div class ="feature-item"></div>
+<div class ="feature-item"></div>
+<div class ="feature-item"></div>
