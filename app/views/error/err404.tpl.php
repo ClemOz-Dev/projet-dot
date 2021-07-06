@@ -1,7 +1,8 @@
-<h1>404 Not Found</h1>
+<?php require __DIR__ . "/../partials/back_button.php"; ?>
 
-<p>
-    La ressource demandée n'existe pas...
+<h1 class="errorTitle">404 Not Found</h1>
+
+<p class="errorText">
+  La ressource demandée n'existe pas...
 </p>
 
-<a href="<?= $this->router->generate('main-home') ?>">retour à l'accueil</a>

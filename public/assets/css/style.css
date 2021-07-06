@@ -24,6 +24,11 @@ body {
     justify-content: space-around;
 }
 
+.errorTitle, .errorText{
+    color: #fff;
+    width: 100%;
+}
+
 @media screen and (min-width: 640px) {
     .container {
         flex-direction: row;

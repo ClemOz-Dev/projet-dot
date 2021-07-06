@@ -1,0 +1,13 @@
+.feature-list{
+    width: 100%; 
+    overflow: auto;
+    margin: 5%;
+    margin: auto;
+    border: red 1px solid;  
+}
+
+.feature-item{
+    border: white 1px solid;
+    color: white;
+    margin: 5%;
+}
